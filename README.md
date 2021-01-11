@@ -29,7 +29,7 @@ $ npm install -g @vtex/cli-plugin-config
 $ vtex COMMAND
 running command...
 $ vtex (-v|--version|version)
-@vtex/cli-plugin-config/0.0.0 linux-x64 node-v12.18.4
+@vtex/cli-plugin-config/0.0.0 linux-x64 node-v12.20.0
 $ vtex --help [COMMAND]
 USAGE
   $ vtex COMMAND
@@ -38,27 +38,67 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`vtex hello [FILE]`](#vtex-hello-file)
+* [`vtex config:get CONFIGNAME`](#vtex-configget-configname)
+* [`vtex config:reset CONFIGNAME`](#vtex-configreset-configname)
+* [`vtex config:set CONFIGNAME VALUE`](#vtex-configset-configname-value)
 
-## `vtex hello [FILE]`
+## `vtex config:get CONFIGNAME`
 
-describe the command here
+Gets the current value for the requested configuration
 
 ```
 USAGE
-  $ vtex hello [FILE]
+  $ vtex config:get CONFIGNAME
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-  -v, --verbose    Show debug level logs
-  --trace          Ensure all requests to VTEX IO are traced
+  -h, --help     show CLI help
+  -v, --verbose  Show debug level logs
+  --trace        Ensure all requests to VTEX IO are traced
 
-EXAMPLE
-  $ oclif-example hello
-  hello world from ./src/hello.ts!
+EXAMPLES
+  vtex config get env
+  vtex config get cluster
 ```
 
-_See code: [build/commands/hello.ts](https://github.com/vtex/cli-plugin-template/blob/v0.0.0/build/commands/hello.ts)_
+_See code: [build/commands/config/get.ts](https://github.com/vtex/cli-plugin-config/blob/v0.0.0/build/commands/config/get.ts)_
+
+## `vtex config:reset CONFIGNAME`
+
+Reset the requested configuration to the default value
+
+```
+USAGE
+  $ vtex config:reset CONFIGNAME
+
+OPTIONS
+  -h, --help     show CLI help
+  -v, --verbose  Show debug level logs
+  --trace        Ensure all requests to VTEX IO are traced
+
+EXAMPLES
+  vtex config reset env
+  vtex config reset cluster
+```
+
+_See code: [build/commands/config/reset.ts](https://github.com/vtex/cli-plugin-config/blob/v0.0.0/build/commands/config/reset.ts)_
+
+## `vtex config:set CONFIGNAME VALUE`
+
+Sets the current value for the given configuration
+
+```
+USAGE
+  $ vtex config:set CONFIGNAME VALUE
+
+OPTIONS
+  -h, --help     show CLI help
+  -v, --verbose  Show debug level logs
+  --trace        Ensure all requests to VTEX IO are traced
+
+EXAMPLES
+  vtex config set env envValue
+  vtex config set cluster clusterValue
+```
+
+_See code: [build/commands/config/set.ts](https://github.com/vtex/cli-plugin-config/blob/v0.0.0/build/commands/config/set.ts)_
 <!-- commandsstop -->
