@@ -29,7 +29,7 @@ $ npm install -g @vtex/cli-plugin-config
 $ vtex COMMAND
 running command...
 $ vtex (-v|--version|version)
-@vtex/cli-plugin-config/0.0.0 linux-x64 node-v12.20.0
+@vtex/cli-plugin-config/0.0.1 linux-x64 node-v12.20.1
 $ vtex --help [COMMAND]
 USAGE
   $ vtex COMMAND
@@ -60,7 +60,7 @@ EXAMPLES
   vtex config get cluster
 ```
 
-_See code: [build/commands/config/get.ts](https://github.com/vtex/cli-plugin-config/blob/v0.0.0/build/commands/config/get.ts)_
+_See code: [build/commands/config/get.ts](https://github.com/vtex/cli-plugin-config/blob/v0.0.1/build/commands/config/get.ts)_
 
 ## `vtex config:reset CONFIGNAME`
 
@@ -80,7 +80,7 @@ EXAMPLES
   vtex config reset cluster
 ```
 
-_See code: [build/commands/config/reset.ts](https://github.com/vtex/cli-plugin-config/blob/v0.0.0/build/commands/config/reset.ts)_
+_See code: [build/commands/config/reset.ts](https://github.com/vtex/cli-plugin-config/blob/v0.0.1/build/commands/config/reset.ts)_
 
 ## `vtex config:set CONFIGNAME VALUE`
 
@@ -100,5 +100,5 @@ EXAMPLES
   vtex config set cluster clusterValue
 ```
 
-_See code: [build/commands/config/set.ts](https://github.com/vtex/cli-plugin-config/blob/v0.0.0/build/commands/config/set.ts)_
+_See code: [build/commands/config/set.ts](https://github.com/vtex/cli-plugin-config/blob/v0.0.1/build/commands/config/set.ts)_
 <!-- commandsstop -->
