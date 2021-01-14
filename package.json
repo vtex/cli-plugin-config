@@ -1,7 +1,7 @@
 {
   "name": "@vtex/cli-plugin-config",
   "description": "vtex plugin config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "bugs": "https://github.com/vtex/cli-plugin-config/issues",
   "dependencies": {
     "@oclif/command": "^1",
