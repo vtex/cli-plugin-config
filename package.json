@@ -51,7 +51,7 @@
     ],
     "topics": {
       "config": {
-        "description": "Config commands. Run 'vtex config' to see all subcommands"
+        "description": "Prints, sets, or resets a configuration value. Run 'vtex config' to see all 3 subcommands."
       }
     }
   },
