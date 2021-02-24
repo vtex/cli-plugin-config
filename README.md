@@ -29,7 +29,7 @@ $ npm install -g @vtex/cli-plugin-config
 $ vtex COMMAND
 running command...
 $ vtex (-v|--version|version)
-@vtex/cli-plugin-config/0.0.2 linux-x64 node-v12.20.1
+@vtex/cli-plugin-config/0.0.2 linux-x64 node-v12.20.2
 $ vtex --help [COMMAND]
 USAGE
   $ vtex COMMAND
@@ -44,11 +44,14 @@ USAGE
 
 ## `vtex config:get CONFIGNAME`
 
-Gets the current value for the requested configuration
+Prints the value of the requested configuration key.
 
 ```
 USAGE
   $ vtex config:get CONFIGNAME
+
+ARGUMENTS
+  CONFIGNAME  (env|cluster) Configuration to retrieve the value from.
 
 OPTIONS
   -h, --help     show CLI help
@@ -64,11 +67,14 @@ _See code: [build/commands/config/get.ts](https://github.com/vtex/cli-plugin-con
 
 ## `vtex config:reset CONFIGNAME`
 
-Reset the requested configuration to the default value
+Resets the specified configuration to its default value.
 
 ```
 USAGE
   $ vtex config:reset CONFIGNAME
+
+ARGUMENTS
+  CONFIGNAME  (env|cluster) Name of the configuration to reset.
 
 OPTIONS
   -h, --help     show CLI help
@@ -84,11 +90,15 @@ _See code: [build/commands/config/reset.ts](https://github.com/vtex/cli-plugin-c
 
 ## `vtex config:set CONFIGNAME VALUE`
 
-Sets the current value for the given configuration
+Sets the value of a configuration key.
 
 ```
 USAGE
   $ vtex config:set CONFIGNAME VALUE
+
+ARGUMENTS
+  CONFIGNAME  (env|cluster) Name of the configuration.
+  VALUE       New value of the specified configuration.
 
 OPTIONS
   -h, --help     show CLI help
