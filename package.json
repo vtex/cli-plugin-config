@@ -1,11 +1,12 @@
 {
   "name": "@vtex/cli-plugin-config",
   "description": "vtex plugin config",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "bugs": "https://github.com/vtex/cli-plugin-config/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
+    "chalk": "^4.1.1",
     "ramda": "^0.27.1",
     "tslib": "^1"
   },
